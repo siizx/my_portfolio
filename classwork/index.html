@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Scratch Pad</title>
+</head>
+
+<body>
+    <form>
+        <label for="email-input">Please use a udemy.com email:</label>
+        <input type="email" id="email-input" pattern=".+@udemy\.com" size="30" required placeholder="example@udemy.com">
+        <input type="submit" value="Sign in">
+    </form>
+
+    <form>
+        <label for="range-input">Volume</label>
+        <input type="range" id="range-input" value="20" step="20" min="0" max="100">
+    </form>
+
+    <h1>How was your time at HappyLand?</h1>
+
+    <form>
+
+        <!-- Ricorda che il 'name' deve essere comune tra le opzioni, altrimento posso checkare tutti i box. -->
+        <label for="bad-input">Bad</label>
+        <input type="radio" id="bad-input" name="experience" value="Bad">
+
+        <label for="okay-input">Okay</label>
+        <input type="radio" id="okay-input" name="experience" value="okay">
+
+        <label for="good-input">Good</label>
+        <input type="radio" id="good-input" name="experience" value="good" checked>
+
+        <input type="submit">
+    </form>
+
+    <label for="snack-list">Which Snack do you want?</label>
+
+    <select name="snacks" id="snacks-list"> <!-- Esistono anche gli attributi 'disabled','required' e 'multiple'-->
+
+        <option value="">--Please choose an option--</option>
+        <option value="lollipop">Lollipop</option>
+        <option value="ice-cream">Ice Cream</option>
+        <option value="crisps">Crisps</option>
+        <option value="chocolate">Chocolate</option>
+    </select>
+
+    <hr>
+    <h2>One-T-Shirt Shop</h2>
+    <form>
+        <label for="apparel-size" required>Which t-shirt size do you want to buy?</label>
+
+        <select name="sizes" id="apparel-size">
+            <option value="extra-small">Extra Small</option>
+            <option value="small">Small</option>
+            <option value="medium" selected>Medium</option>
+            <option value="large">Large</option>
+            <option value="extra-large">Extra Large</option>
+        </select>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" value="1" min="1" max="1000" step="1">
+        <input type="submit" value="Checkout">
+    </form>
+
+    <div data-question="What colour are carrots?"></div>
+
+</body>
+
+</html>
